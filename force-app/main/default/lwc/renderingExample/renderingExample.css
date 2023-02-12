@@ -1,0 +1,21 @@
+.label{
+    background:cyan;
+    color: magenta;
+    border: yellow;
+    font-family: sans-serif;
+    font-size: 5px;
+    padding:"around-medium";
+}
+.h1{
+    background: black;
+    color: white;
+    border: green;
+    font-size: 30px;
+    padding: "around-medium";
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.h2{
+    color: brown;
+
+}

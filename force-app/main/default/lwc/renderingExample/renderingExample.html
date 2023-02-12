@@ -1,0 +1,23 @@
+<template>
+    <lightning-input type="checkbox" label="showDiv" class="label" onchange={showDivHandler}></lightning-input>
+        <template if:true={statusElement}>
+            <div>this is true</div>
+        </template>
+        <template if:false={statusElement}>
+            <div>this is false</div>
+        </template>
+
+        <!--this is the for each loop-->
+        <h1 class="h1"> This is for each loop </h1>
+
+        <template for:each={citi} for:item="city">
+            <p key={city} class="h2">{city}</p>
+        </template>
+
+        <!-- this is the iterator-->
+        <h1 class="h1"> This is iterator </h1>
+
+        <template iterator:it={citi}>
+            <p key={it.value} class="h2">{it.value}</p>
+        </template>
+</template>
